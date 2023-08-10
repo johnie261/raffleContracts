@@ -1,0 +1,856 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "prevURI",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "newURI",
+          "type": "string"
+        }
+      ],
+      "name": "ContractURIUpdated",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "contractURI",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_uri",
+          "type": "string"
+        }
+      ],
+      "name": "setContractURI",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "contractURI()": "e8a3d485",
+    "setContractURI(string)": "938e3d7b"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"prevURI\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"newURI\",\"type\":\"string\"}],\"name\":\"ContractURIUpdated\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"contractURI\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_uri\",\"type\":\"string\"}],\"name\":\"setContractURI\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"events\":{\"ContractURIUpdated(string,string)\":{\"details\":\"Emitted when the contract URI is updated.\"}},\"kind\":\"dev\",\"methods\":{\"setContractURI(string)\":{\"details\":\"Caller should be authorized to setup contractURI, e.g. contract admin.                  See {_canSetContractURI}.                  Emits {ContractURIUpdated Event}.\",\"params\":{\"_uri\":\"keccak256 hash of the role. e.g. keccak256(\\\"TRANSFER_ROLE\\\")\"}}},\"title\":\"Contract Metadata\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"contractURI()\":{\"notice\":\"Returns the contract metadata URI.\"},\"setContractURI(string)\":{\"notice\":\"Lets a contract admin set the URI for contract-level metadata.\"}},\"notice\":\"Thirdweb's `ContractMetadata` is a contract extension for any base contracts. It lets you set a metadata URI           for you contract.           Additionally, `ContractMetadata` is necessary for NFT contracts that want royalties to get distributed on OpenSea.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"node_modules/@thirdweb-dev/contracts/extension/ContractMetadata.sol\":\"ContractMetadata\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@thirdweb-dev/=node_modules/@thirdweb-dev/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"node_modules/@thirdweb-dev/contracts/extension/ContractMetadata.sol\":{\"keccak256\":\"0xf53ab08ec3057056872c15e35a5610f7a43426bd2829786aed006d527177adfe\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://ee132ae5efdd372152febfcd8fd3a7cb82c7019367d92c886f5096003a79f392\",\"dweb:/ipfs/QmRW1cGWmZAu57huZpTUwsWB8AxUFrBp6g4NqozXpbWsR6\"]},\"node_modules/@thirdweb-dev/contracts/extension/interface/IContractMetadata.sol\":{\"keccak256\":\"0x41d3f7f43c124e9ff0247cb94f4e8fc8c5a79b1de331c67eb03654154248d7f2\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://fa8d6251cf3a876193cc719b456c02ff23d3f2d5486431e9bdaf290be9a4ce9a\",\"dweb:/ipfs/QmRwnA2q15Vdkc66fz6BAinZM3tjuVNHn5CeGzc7ZFMAzr\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.21+commit.d9974bed"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "prevURI",
+              "type": "string",
+              "indexed": false
+            },
+            {
+              "internalType": "string",
+              "name": "newURI",
+              "type": "string",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "ContractURIUpdated",
+          "anonymous": false
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "contractURI",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "_uri",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setContractURI"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "setContractURI(string)": {
+            "details": "Caller should be authorized to setup contractURI, e.g. contract admin.                  See {_canSetContractURI}.                  Emits {ContractURIUpdated Event}.",
+            "params": {
+              "_uri": "keccak256 hash of the role. e.g. keccak256(\"TRANSFER_ROLE\")"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "contractURI()": {
+            "notice": "Returns the contract metadata URI."
+          },
+          "setContractURI(string)": {
+            "notice": "Lets a contract admin set the URI for contract-level metadata."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@thirdweb-dev/=node_modules/@thirdweb-dev/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "node_modules/@thirdweb-dev/contracts/extension/ContractMetadata.sol": "ContractMetadata"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "node_modules/@thirdweb-dev/contracts/extension/ContractMetadata.sol": {
+        "keccak256": "0xf53ab08ec3057056872c15e35a5610f7a43426bd2829786aed006d527177adfe",
+        "urls": [
+          "bzz-raw://ee132ae5efdd372152febfcd8fd3a7cb82c7019367d92c886f5096003a79f392",
+          "dweb:/ipfs/QmRW1cGWmZAu57huZpTUwsWB8AxUFrBp6g4NqozXpbWsR6"
+        ],
+        "license": "Apache-2.0"
+      },
+      "node_modules/@thirdweb-dev/contracts/extension/interface/IContractMetadata.sol": {
+        "keccak256": "0x41d3f7f43c124e9ff0247cb94f4e8fc8c5a79b1de331c67eb03654154248d7f2",
+        "urls": [
+          "bzz-raw://fa8d6251cf3a876193cc719b456c02ff23d3f2d5486431e9bdaf290be9a4ce9a",
+          "dweb:/ipfs/QmRwnA2q15Vdkc66fz6BAinZM3tjuVNHn5CeGzc7ZFMAzr"
+        ],
+        "license": "Apache-2.0"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "node_modules/@thirdweb-dev/contracts/extension/ContractMetadata.sol",
+    "id": 45270,
+    "exportedSymbols": {
+      "ContractMetadata": [
+        45269
+      ],
+      "IContractMetadata": [
+        45908
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:1585:28",
+    "nodes": [
+      {
+        "id": 45213,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:28",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 45214,
+        "nodeType": "ImportDirective",
+        "src": "86:43:28",
+        "nodes": [],
+        "absolutePath": "node_modules/@thirdweb-dev/contracts/extension/interface/IContractMetadata.sol",
+        "file": "./interface/IContractMetadata.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 45270,
+        "sourceUnit": 45909,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 45269,
+        "nodeType": "ContractDefinition",
+        "src": "452:1171:28",
+        "nodes": [
+          {
+            "id": 45221,
+            "nodeType": "VariableDeclaration",
+            "src": "565:34:28",
+            "nodes": [],
+            "baseFunctions": [
+              45894
+            ],
+            "constant": false,
+            "documentation": {
+              "id": 45218,
+              "nodeType": "StructuredDocumentation",
+              "src": "514:46:28",
+              "text": "@notice Returns the contract metadata URI."
+            },
+            "functionSelector": "e8a3d485",
+            "mutability": "mutable",
+            "name": "contractURI",
+            "nameLocation": "588:11:28",
+            "overrides": {
+              "id": 45220,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "579:8:28"
+            },
+            "scope": 45269,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 45219,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "565:6:28",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 45242,
+            "nodeType": "FunctionDefinition",
+            "src": "1003:188:28",
+            "nodes": [],
+            "body": {
+              "id": 45241,
+              "nodeType": "Block",
+              "src": "1065:126:28",
+              "nodes": [],
+              "statements": [
+                {
+                  "condition": {
+                    "id": 45230,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "!",
+                    "prefix": true,
+                    "src": "1079:21:28",
+                    "subExpression": {
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "id": 45228,
+                        "name": "_canSetContractURI",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 45268,
+                        "src": "1080:18:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_view$__$returns$_t_bool_$",
+                          "typeString": "function () view returns (bool)"
+                        }
+                      },
+                      "id": 45229,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "nameLocations": [],
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1080:20:28",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 45236,
+                  "nodeType": "IfStatement",
+                  "src": "1075:76:28",
+                  "trueBody": {
+                    "id": 45235,
+                    "nodeType": "Block",
+                    "src": "1102:49:28",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "hexValue": "4e6f7420617574686f72697a6564",
+                              "id": 45232,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "string",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "1123:16:28",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_fac3bac318c0d00994f57b0f2f4c643c313072b71db2302bf4b900309cc50b36",
+                                "typeString": "literal_string \"Not authorized\""
+                              },
+                              "value": "Not authorized"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_stringliteral_fac3bac318c0d00994f57b0f2f4c643c313072b71db2302bf4b900309cc50b36",
+                                "typeString": "literal_string \"Not authorized\""
+                              }
+                            ],
+                            "id": 45231,
+                            "name": "revert",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [
+                              -19,
+                              -19
+                            ],
+                            "referencedDeclaration": -19,
+                            "src": "1116:6:28",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_revert_pure$_t_string_memory_ptr_$returns$__$",
+                              "typeString": "function (string memory) pure"
+                            }
+                          },
+                          "id": 45233,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "nameLocations": [],
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "1116:24:28",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 45234,
+                        "nodeType": "ExpressionStatement",
+                        "src": "1116:24:28"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 45238,
+                        "name": "_uri",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 45224,
+                        "src": "1179:4:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      ],
+                      "id": 45237,
+                      "name": "_setupContractURI",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 45262,
+                      "src": "1161:17:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory)"
+                      }
+                    },
+                    "id": 45239,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1161:23:28",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 45240,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1161:23:28"
+                }
+              ]
+            },
+            "baseFunctions": [
+              45900
+            ],
+            "documentation": {
+              "id": 45222,
+              "nodeType": "StructuredDocumentation",
+              "src": "606:392:28",
+              "text": "  @notice         Lets a contract admin set the URI for contract-level metadata.\n  @dev            Caller should be authorized to setup contractURI, e.g. contract admin.\n                  See {_canSetContractURI}.\n                  Emits {ContractURIUpdated Event}.\n  @param _uri     keccak256 hash of the role. e.g. keccak256(\"TRANSFER_ROLE\")"
+            },
+            "functionSelector": "938e3d7b",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setContractURI",
+            "nameLocation": "1012:14:28",
+            "overrides": {
+              "id": 45226,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "1056:8:28"
+            },
+            "parameters": {
+              "id": 45225,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 45224,
+                  "mutability": "mutable",
+                  "name": "_uri",
+                  "nameLocation": "1041:4:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 45242,
+                  "src": "1027:18:28",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 45223,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1027:6:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1026:20:28"
+            },
+            "returnParameters": {
+              "id": 45227,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1065:0:28"
+            },
+            "scope": 45269,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 45262,
+            "nodeType": "FunctionDefinition",
+            "src": "1273:185:28",
+            "nodes": [],
+            "body": {
+              "id": 45261,
+              "nodeType": "Block",
+              "src": "1329:129:28",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    45249
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 45249,
+                      "mutability": "mutable",
+                      "name": "prevURI",
+                      "nameLocation": "1353:7:28",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 45261,
+                      "src": "1339:21:28",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string"
+                      },
+                      "typeName": {
+                        "id": 45248,
+                        "name": "string",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1339:6:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_storage_ptr",
+                          "typeString": "string"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 45251,
+                  "initialValue": {
+                    "id": 45250,
+                    "name": "contractURI",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 45221,
+                    "src": "1363:11:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1339:35:28"
+                },
+                {
+                  "expression": {
+                    "id": 45254,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 45252,
+                      "name": "contractURI",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 45221,
+                      "src": "1384:11:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 45253,
+                      "name": "_uri",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 45245,
+                      "src": "1398:4:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "1384:18:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 45255,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1384:18:28"
+                },
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "id": 45257,
+                        "name": "prevURI",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 45249,
+                        "src": "1437:7:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "id": 45258,
+                        "name": "_uri",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 45245,
+                        "src": "1446:4:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      ],
+                      "id": 45256,
+                      "name": "ContractURIUpdated",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 45907,
+                      "src": "1418:18:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory,string memory)"
+                      }
+                    },
+                    "id": 45259,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1418:33:28",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 45260,
+                  "nodeType": "EmitStatement",
+                  "src": "1413:38:28"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 45243,
+              "nodeType": "StructuredDocumentation",
+              "src": "1197:71:28",
+              "text": "@dev Lets a contract admin set the URI for contract-level metadata."
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_setupContractURI",
+            "nameLocation": "1282:17:28",
+            "parameters": {
+              "id": 45246,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 45245,
+                  "mutability": "mutable",
+                  "name": "_uri",
+                  "nameLocation": "1314:4:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 45262,
+                  "src": "1300:18:28",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 45244,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1300:6:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1299:20:28"
+            },
+            "returnParameters": {
+              "id": 45247,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1329:0:28"
+            },
+            "scope": 45269,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 45268,
+            "nodeType": "FunctionDefinition",
+            "src": "1554:67:28",
+            "nodes": [],
+            "documentation": {
+              "id": 45263,
+              "nodeType": "StructuredDocumentation",
+              "src": "1464:85:28",
+              "text": "@dev Returns whether contract metadata can be set in the given execution context."
+            },
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_canSetContractURI",
+            "nameLocation": "1563:18:28",
+            "parameters": {
+              "id": 45264,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1581:2:28"
+            },
+            "returnParameters": {
+              "id": 45267,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 45266,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 45268,
+                  "src": "1615:4:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 45265,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1615:4:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1614:6:28"
+            },
+            "scope": 45269,
+            "stateMutability": "view",
+            "virtual": true,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": true,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 45216,
+              "name": "IContractMetadata",
+              "nameLocations": [
+                "490:17:28"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 45908,
+              "src": "490:17:28"
+            },
+            "id": 45217,
+            "nodeType": "InheritanceSpecifier",
+            "src": "490:17:28"
+          }
+        ],
+        "canonicalName": "ContractMetadata",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 45215,
+          "nodeType": "StructuredDocumentation",
+          "src": "131:319:28",
+          "text": "  @title   Contract Metadata\n  @notice  Thirdweb's `ContractMetadata` is a contract extension for any base contracts. It lets you set a metadata URI\n           for you contract.\n           Additionally, `ContractMetadata` is necessary for NFT contracts that want royalties to get distributed on OpenSea."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          45269,
+          45908
+        ],
+        "name": "ContractMetadata",
+        "nameLocation": "470:16:28",
+        "scope": 45270,
+        "usedErrors": [],
+        "usedEvents": [
+          45907
+        ]
+      }
+    ],
+    "license": "Apache-2.0"
+  },
+  "id": 28
+}

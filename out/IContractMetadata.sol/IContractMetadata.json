@@ -1,0 +1,423 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "prevURI",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "newURI",
+          "type": "string"
+        }
+      ],
+      "name": "ContractURIUpdated",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "contractURI",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_uri",
+          "type": "string"
+        }
+      ],
+      "name": "setContractURI",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "contractURI()": "e8a3d485",
+    "setContractURI(string)": "938e3d7b"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"prevURI\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"newURI\",\"type\":\"string\"}],\"name\":\"ContractURIUpdated\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"contractURI\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_uri\",\"type\":\"string\"}],\"name\":\"setContractURI\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"events\":{\"ContractURIUpdated(string,string)\":{\"details\":\"Emitted when the contract URI is updated.\"}},\"kind\":\"dev\",\"methods\":{\"contractURI()\":{\"details\":\"Returns the metadata URI of the contract.\"},\"setContractURI(string)\":{\"details\":\"Sets contract URI for the storefront-level metadata of the contract.       Only module admin can call this function.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"notice\":\"Thirdweb's `ContractMetadata` is a contract extension for any base contracts. It lets you set a metadata URI  for you contract.  Additionally, `ContractMetadata` is necessary for NFT contracts that want royalties to get distributed on OpenSea.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"node_modules/@thirdweb-dev/contracts/extension/interface/IContractMetadata.sol\":\"IContractMetadata\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@thirdweb-dev/=node_modules/@thirdweb-dev/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"node_modules/@thirdweb-dev/contracts/extension/interface/IContractMetadata.sol\":{\"keccak256\":\"0x41d3f7f43c124e9ff0247cb94f4e8fc8c5a79b1de331c67eb03654154248d7f2\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://fa8d6251cf3a876193cc719b456c02ff23d3f2d5486431e9bdaf290be9a4ce9a\",\"dweb:/ipfs/QmRwnA2q15Vdkc66fz6BAinZM3tjuVNHn5CeGzc7ZFMAzr\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.21+commit.d9974bed"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "prevURI",
+              "type": "string",
+              "indexed": false
+            },
+            {
+              "internalType": "string",
+              "name": "newURI",
+              "type": "string",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "ContractURIUpdated",
+          "anonymous": false
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "contractURI",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "_uri",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setContractURI"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "contractURI()": {
+            "details": "Returns the metadata URI of the contract."
+          },
+          "setContractURI(string)": {
+            "details": "Sets contract URI for the storefront-level metadata of the contract.       Only module admin can call this function."
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@thirdweb-dev/=node_modules/@thirdweb-dev/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "node_modules/@thirdweb-dev/contracts/extension/interface/IContractMetadata.sol": "IContractMetadata"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "node_modules/@thirdweb-dev/contracts/extension/interface/IContractMetadata.sol": {
+        "keccak256": "0x41d3f7f43c124e9ff0247cb94f4e8fc8c5a79b1de331c67eb03654154248d7f2",
+        "urls": [
+          "bzz-raw://fa8d6251cf3a876193cc719b456c02ff23d3f2d5486431e9bdaf290be9a4ce9a",
+          "dweb:/ipfs/QmRwnA2q15Vdkc66fz6BAinZM3tjuVNHn5CeGzc7ZFMAzr"
+        ],
+        "license": "Apache-2.0"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "node_modules/@thirdweb-dev/contracts/extension/interface/IContractMetadata.sol",
+    "id": 45909,
+    "exportedSymbols": {
+      "IContractMetadata": [
+        45908
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:797:35",
+    "nodes": [
+      {
+        "id": 45887,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:35",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 45908,
+        "nodeType": "ContractDefinition",
+        "src": "352:483:35",
+        "nodes": [
+          {
+            "id": 45894,
+            "nodeType": "FunctionDefinition",
+            "src": "441:61:35",
+            "nodes": [],
+            "documentation": {
+              "id": 45889,
+              "nodeType": "StructuredDocumentation",
+              "src": "386:50:35",
+              "text": "@dev Returns the metadata URI of the contract."
+            },
+            "functionSelector": "e8a3d485",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "contractURI",
+            "nameLocation": "450:11:35",
+            "parameters": {
+              "id": 45890,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "461:2:35"
+            },
+            "returnParameters": {
+              "id": 45893,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 45892,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 45894,
+                  "src": "487:13:35",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 45891,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "487:6:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "486:15:35"
+            },
+            "scope": 45908,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 45900,
+            "nodeType": "FunctionDefinition",
+            "src": "661:55:35",
+            "nodes": [],
+            "documentation": {
+              "id": 45895,
+              "nodeType": "StructuredDocumentation",
+              "src": "508:148:35",
+              "text": "  @dev Sets contract URI for the storefront-level metadata of the contract.\n       Only module admin can call this function."
+            },
+            "functionSelector": "938e3d7b",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setContractURI",
+            "nameLocation": "670:14:35",
+            "parameters": {
+              "id": 45898,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 45897,
+                  "mutability": "mutable",
+                  "name": "_uri",
+                  "nameLocation": "701:4:35",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 45900,
+                  "src": "685:20:35",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 45896,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "685:6:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "684:22:35"
+            },
+            "returnParameters": {
+              "id": 45899,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "715:0:35"
+            },
+            "scope": 45908,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 45907,
+            "nodeType": "EventDefinition",
+            "src": "777:56:35",
+            "nodes": [],
+            "anonymous": false,
+            "documentation": {
+              "id": 45901,
+              "nodeType": "StructuredDocumentation",
+              "src": "722:50:35",
+              "text": "@dev Emitted when the contract URI is updated."
+            },
+            "eventSelector": "c9c7c3fe08b88b4df9d4d47ef47d2c43d55c025a0ba88ca442580ed9e7348a16",
+            "name": "ContractURIUpdated",
+            "nameLocation": "783:18:35",
+            "parameters": {
+              "id": 45906,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 45903,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "prevURI",
+                  "nameLocation": "809:7:35",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 45907,
+                  "src": "802:14:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 45902,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "802:6:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 45905,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "newURI",
+                  "nameLocation": "825:6:35",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 45907,
+                  "src": "818:13:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 45904,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "818:6:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "801:31:35"
+            }
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IContractMetadata",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 45888,
+          "nodeType": "StructuredDocumentation",
+          "src": "86:264:35",
+          "text": "  Thirdweb's `ContractMetadata` is a contract extension for any base contracts. It lets you set a metadata URI\n  for you contract.\n  Additionally, `ContractMetadata` is necessary for NFT contracts that want royalties to get distributed on OpenSea."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          45908
+        ],
+        "name": "IContractMetadata",
+        "nameLocation": "362:17:35",
+        "scope": 45909,
+        "usedErrors": [],
+        "usedEvents": [
+          45907
+        ]
+      }
+    ],
+    "license": "Apache-2.0"
+  },
+  "id": 35
+}

@@ -1,0 +1,358 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "restriction",
+          "type": "bool"
+        }
+      ],
+      "name": "OperatorRestriction",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "operatorRestriction",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bool",
+          "name": "restriction",
+          "type": "bool"
+        }
+      ],
+      "name": "setOperatorRestriction",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "operatorRestriction()": "504c6e01",
+    "setOperatorRestriction(bool)": "32f0cd64"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"restriction\",\"type\":\"bool\"}],\"name\":\"OperatorRestriction\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"operatorRestriction\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bool\",\"name\":\"restriction\",\"type\":\"bool\"}],\"name\":\"setOperatorRestriction\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"thirdweb\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"node_modules/@thirdweb-dev/contracts/extension/interface/IOperatorFilterToggle.sol\":\"IOperatorFilterToggle\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@thirdweb-dev/=node_modules/@thirdweb-dev/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"node_modules/@thirdweb-dev/contracts/extension/interface/IOperatorFilterToggle.sol\":{\"keccak256\":\"0xff05e83218d75f27210f20357d27849a2963b82830ca673a25c787f14b4203b1\",\"license\":\"Apache 2.0\",\"urls\":[\"bzz-raw://36434c142d2e2f74a826f1240f8c12432eba0924fa7c888514592c46d4071674\",\"dweb:/ipfs/QmYntnzMvf6Duc9yhFyP4eheicbfUvBGcaXde9xqCrXPan\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.21+commit.d9974bed"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "bool",
+              "name": "restriction",
+              "type": "bool",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "OperatorRestriction",
+          "anonymous": false
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "operatorRestriction",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bool",
+              "name": "restriction",
+              "type": "bool"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setOperatorRestriction"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@thirdweb-dev/=node_modules/@thirdweb-dev/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "node_modules/@thirdweb-dev/contracts/extension/interface/IOperatorFilterToggle.sol": "IOperatorFilterToggle"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "node_modules/@thirdweb-dev/contracts/extension/interface/IOperatorFilterToggle.sol": {
+        "keccak256": "0xff05e83218d75f27210f20357d27849a2963b82830ca673a25c787f14b4203b1",
+        "urls": [
+          "bzz-raw://36434c142d2e2f74a826f1240f8c12432eba0924fa7c888514592c46d4071674",
+          "dweb:/ipfs/QmYntnzMvf6Duc9yhFyP4eheicbfUvBGcaXde9xqCrXPan"
+        ],
+        "license": "Apache 2.0"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "node_modules/@thirdweb-dev/contracts/extension/interface/IOperatorFilterToggle.sol",
+    "id": 46136,
+    "exportedSymbols": {
+      "IOperatorFilterToggle": [
+        46135
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:263:38",
+    "nodes": [
+      {
+        "id": 46119,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:38",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 46135,
+        "nodeType": "ContractDefinition",
+        "src": "86:215:38",
+        "nodes": [
+          {
+            "id": 46124,
+            "nodeType": "EventDefinition",
+            "src": "124:44:38",
+            "nodes": [],
+            "anonymous": false,
+            "eventSelector": "38475885990d8dfe9ca01f0ef160a1b5514426eab9ddbc953a3353410ba78096",
+            "name": "OperatorRestriction",
+            "nameLocation": "130:19:38",
+            "parameters": {
+              "id": 46123,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46122,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "restriction",
+                  "nameLocation": "155:11:38",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46124,
+                  "src": "150:16:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 46121,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "150:4:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "149:18:38"
+            }
+          },
+          {
+            "id": 46129,
+            "nodeType": "FunctionDefinition",
+            "src": "174:60:38",
+            "nodes": [],
+            "functionSelector": "504c6e01",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "operatorRestriction",
+            "nameLocation": "183:19:38",
+            "parameters": {
+              "id": 46125,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "202:2:38"
+            },
+            "returnParameters": {
+              "id": 46128,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46127,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46129,
+                  "src": "228:4:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 46126,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "228:4:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "227:6:38"
+            },
+            "scope": 46135,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 46134,
+            "nodeType": "FunctionDefinition",
+            "src": "240:59:38",
+            "nodes": [],
+            "functionSelector": "32f0cd64",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setOperatorRestriction",
+            "nameLocation": "249:22:38",
+            "parameters": {
+              "id": 46132,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46131,
+                  "mutability": "mutable",
+                  "name": "restriction",
+                  "nameLocation": "277:11:38",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46134,
+                  "src": "272:16:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 46130,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "272:4:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "271:18:38"
+            },
+            "returnParameters": {
+              "id": 46133,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "298:0:38"
+            },
+            "scope": 46135,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IOperatorFilterToggle",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 46120,
+          "nodeType": "StructuredDocumentation",
+          "src": "64:21:38",
+          "text": "@author thirdweb"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          46135
+        ],
+        "name": "IOperatorFilterToggle",
+        "nameLocation": "96:21:38",
+        "scope": 46136,
+        "usedErrors": [],
+        "usedEvents": [
+          46124
+        ]
+      }
+    ],
+    "license": "Apache 2.0"
+  },
+  "id": 38
+}
